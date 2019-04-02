@@ -37,12 +37,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Do something in response to button click
                 tvStatus.setText("Asynch Button Pressed");
-                mAsyncWeather.execute();
+                mAsyncWeather.execute(tvStatus);
                 //String weather = mAsyncWeather.getWeatherSynch();
                 //tvStatus.setText(weather);
             }
         });
-
 
     }
 }
